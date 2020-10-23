@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and Padding</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rosybrown;
+        }
+        .container {
+            background-color: wheat;
+            border: 5px solid red;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 20px;
+            width:230px;
+            box-sizing: border-box; /*In order to adjust the padding with the change of width */
+            /* We can set the padding like this 
+            padding-left: 50;
+            Padding in LTRB can be writting like this 
+            padding: 21px 34px 54px 34px
+            Top/Bottom Left/Right padding
+            padding: 21 px 41px
+            Similar thing can be done with margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="id">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo magnam earum voluptates quidem maiores
+            aliquam reprehenderit consectetur. Vero ratione, saepe iure praesentium harum aut sed non dolorem assumenda
+            a!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="id">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo magnam earum voluptates quidem maiores
+            aliquam reprehenderit consectetur. Vero ratione, saepe iure praesentium harum aut sed non dolorem assumenda
+            a!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="id">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quo magnam earum voluptates quidem maiores
+            aliquam reprehenderit consectetur. Vero ratione, saepe iure praesentium harum aut sed non dolorem assumenda
+            a!</p>
+    </div>
+</body>
+
+</html>
