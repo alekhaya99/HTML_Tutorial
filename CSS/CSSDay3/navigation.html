@@ -6,7 +6,8 @@
     <title>Navigation Bar</title>
     <style>
         .navbar{
-            background-color: yellow;
+            background-color: wheat;
+            border-radius: 10px;
         }
         .navbar ul{
             overflow:auto;
@@ -15,11 +16,24 @@
             float: left;
             /* In order to remove bullet */
             list-style: none;
-            padding: 15px;
+            padding: 10px;
+            margin: 3px 3px;
         }
         .navbar li a{
 padding: 3px 3px;
+text-decoration: none;
+color: white;
 
+        }
+        .search{
+            float: right;
+            color: wheat;
+            padding: 17px 17px;
+        }
+        .navbar input{
+            border: 3px solid red;
+            border-radius: 10px;
+            padding: 5px;
         }
     </style>
 </head>
@@ -30,8 +44,12 @@ padding: 3px 3px;
                 <li><a href="#">About me</a></li>
                 <li><a href="#">My Resume</a></li>
                 <li><a href="#">My Hobies</a><li>
-                <li><a href="#">Contact me</a></li>    
+                <li><a href="#">Contact me</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search here">
+                </div>    
             </ul>
+            
         </nav>
     </header>
     
