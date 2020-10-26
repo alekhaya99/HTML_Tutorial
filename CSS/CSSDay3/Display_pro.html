@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header {
+            margin: auto;
+            /* We can only set the width if my display is set to block, for inline we cannot set it */
+            width: 1200px;
+            display: inline-block;
+        }
+        
+
+        img {
+            width: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px;
+            display: inline-block;
+            text-align: center;
+            width: 33%;
+        }
+        .block{
+            border: 3px solid black;
+            background-color: wheat;
+            margin 4px 0px ;
+            padding: 20px;
+            display: inline-block;
+            width: 33%;
+            }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <h2>Welcome to my portal</h2>
+        <img src="https://www.mdis.edu.sg/blog/wp-content/uploads/2020/06/Alek-SOE-Student.jpg" alt="">
+    </header>
+    <div class="container">
+        <div class="block">
+            <h4 class="heading">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium et ex sint architecto, omnis a
+                    nulla totam. Voluptate iure, quod ipsa excepturi porro soluta unde, voluptatum aperiam minima
+                    laboriosam eaque recusandae. Incidunt eum tempora sint corrupti, consectetur voluptatibus inventore
+                    mollitia non. Harum explicabo voluptatem accusantium praesentium dolore. Ex, molestias sit!</p>
+            </h4>
+        </div>
+        <div class="block">
+            <h4 class="heading">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium et ex sint architecto, omnis a
+                    nulla totam. Voluptate iure, quod ipsa excepturi porro soluta unde, voluptatum aperiam minima
+                    laboriosam eaque recusandae. Incidunt eum tempora sint corrupti, consectetur voluptatibus inventore
+                    mollitia non. Harum explicabo voluptatem accusantium praesentium dolore. Ex, molestias sit!</p>
+            </h4>
+        </div>
+        <div class="block">
+            <h4 class="heading">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium et ex sint architecto, omnis a
+                    nulla totam. Voluptate iure, quod ipsa excepturi porro soluta unde, voluptatum aperiam minima
+                    laboriosam eaque recusandae. Incidunt eum tempora sint corrupti, consectetur voluptatibus inventore
+                    mollitia non. Harum explicabo voluptatem accusantium praesentium dolore. Ex, molestias sit!</p>
+            </h4>
+        </div>
+    </div>
+</body>
+
+</html>
