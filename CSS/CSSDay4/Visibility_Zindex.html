@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid yellowgreen;
+    }
+    #box1{
+         /* Vanishes the colour but reserve the position */
+         visibility: hidden;
+background-color: green;
+    }
+    #box2{
+        /* Vanishes the colour as well unreserve the position */
+        display: none;
+        background-color:tomato;
+    }
+    #box3{
+       position: relative;
+        background-color: gold;
+        top: 43px;
+        z-index: -35;
+    }
+    #box4{
+        
+        position: relative;
+        background-color: indigo;
+        top: 25px;
+        z-index: -165;
+    }
+</style>
+<body>
+    <div class="box" id="box1"> </div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+
+    
+</body>
+</html>

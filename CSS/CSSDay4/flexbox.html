@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 600px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* In order to define Flex direction
+            flex-direction: row-reverse;
+            /* For responsive layout */
+            /* flex-wrap: wrap; */ 
+
+            flex-flow: row-reverse wrap; /* Short hand way */
+
+            /* In order to center the content */
+            justify-content: center;
+
+            /* In order to make content vertically center */
+            align-items: center;
+        }
+
+        .item {
+            display: flex;
+            background-color: burlywood;
+            padding: 10px;
+            border: 2px solid yellow;
+            margin: 2px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item-is1">First Box</div>
+        <div class="item" id="item-is2">Second Box</div>
+        <div class="item" id="item-is3">Third Box</div>
+        <div class="item" id="item-is4">Fourth Box</div>
+        <div class="item" id="item-is5">Fifth Box</div>
+        <div class="item" id="item-is6">Sixth Box</div>
+        <div class="item" id="item-is7">Seventh Box</div>
+        <div class="item" id="item-is8">Eight Box</div>
+    </div>
+
+</body>
+
+</html>
