@@ -34,6 +34,29 @@
             width: 200px;
             height: 200px;
         }
+        #item-is1{
+            order: 2;
+        }
+        #item-is2{
+            flex-grow: 2;
+        }
+        #item-is3{
+            flex-shrink: 3;
+           
+        }
+        #item-is4{
+            flex-basis: 320px;
+             /* when flex direction is set to row flex basis will control the width */
+             /* when flex direction is set to column flex basis will control the height */
+        }
+        /* Short hand of flex */
+        #item-is5{
+            flex: 2 2 344px;
+            /* Flex Grow Flex Shrink Flex basis */
+        }
+        #item-is6{
+            align-self: flex-start;
+        }
     </style>
 </head>
 

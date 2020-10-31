@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            font-size: 80px;
+            text-align: center;
+            background-color: blanchedalmond;
+            color: black;
+            display: none;
+        }
+        @media (max-width: 300px){
+            #box1{
+                display: block;
+                background-color: chartreuse;
+            }
+        }
+        @media (max-width: 500px) and (min-width:300px){
+            #box2{
+                display: block;
+                background-color: cyan;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box" id="box1">I am first</div>
+    <div class="box" id="box2">I am second</div>
+    <div class="box" id="box3">I am third</div>
+    <div class="box" id="box4">I am fourth</div>
+</body>
+</html>
