@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector Part 2</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: wheat;
+            color: white;
+            
+        }
+        section{
+            border: 2px solid white;
+            height: 500px;
+            margin: 2px 20px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        header::before{
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        h1 {
+            font-size: 5rem;
+        }
+        /* Before pseudo selector, this will display the content before the section */
+        section::before{
+            content: "This is the before content";
+        }
+        /* This is after pseudo selector */
+        section::after{
+            content: "This is the after content";
+        }
+        .navigation{
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: 30px;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Apple</li>
+                <li class="item">Orange</li>
+                <li class="item">Mango</li>
+                <li class="item">Grapes</li>
+                <li class="item">Guava</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>This is a fruits portal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, fuga rem. Vero ea nulla aliquid deserunt
+            a consectetur sint animi accusantium? Doloribus expedita iure non et accusantium enim saepe quas soluta
+            quae unde excepturi maxime rerum labore veniam incidunt consectetur provident illo dolorem fugiat,
+            temporibus est dolor? Deserunt possimus dolores cum. Iure beatae, nisi minus amet dolorem expedita,
+            blanditiis, quia quos rerum consectetur fugit delectus aut accusantium. Id esse dolorum maxime eos
+            eligendi, explicabo reprehenderit eaque incidunt, error reiciendis quas fugit repudiandae qui! Aperiam
+            quidem nostrum impedit, tempore voluptas ipsum nesciunt voluptates libero eos! Nulla distinctio delectus
+            accusamus facilis neque.</p>
+    </section>
+    <hr>
+</body>
+
+</html>

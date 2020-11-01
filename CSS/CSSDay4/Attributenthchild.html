@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and pseudo selector</title>
+    <style>
+        .container{
+            margin: auto;
+            display: block;
+            width: 250px;
+        }
+        input {
+            display: block;
+        }
+        /* Pseudeo Selector */
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target]{
+            color: blueviolet;
+            
+        }
+        a:hover {
+            color: white;
+            background-color: red;
+        }
+        a:visited {
+            color: purple;
+            background-color: seashell;
+        }
+        a[target='_self']{
+            color: gold;
+            
+        }
+        /* Applying CSS for 3rd Child */
+        li:nth-child(3){
+    color: red;
+}
+/* Applying CSS to all even child */
+/* li:nth-child(2n+2){
+    color: pink;
+} */
+li:nth-child(even){
+    color: pink;
+}
+    </style>
+</head>
+
+<body>
+  
+    <div class="container">
+          <!-- In order to open a linl in new tab -->
+    <h2><a href="https://www.facebook.com/" target="_blank">Facebook</a></h2>
+    <h2><a href="https://www.google.com.sg/" target="_self">Google</a></h2>
+        <form action="" class="form">
+            <input type="text" placeholder="Name">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Enter to login">
+        </form>
+        <ul>
+            <li class="item" id="item-1">This is item 1</li>
+            <li class="item" id="item-2">This is item 2</li>
+            <li class="item" id="item-3">This is item 3</li>
+            <li class="item" id="item-4">This is item 4</li>
+            <li class="item" id="item-5">This is item 5</li>
+            <li class="item" id="item-6">This is item 6</li>
+        </ul>
+    </div>
+</body>
+
+</html>

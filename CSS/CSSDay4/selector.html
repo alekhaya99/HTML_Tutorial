@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<style>
+    .container {
+        background-color: blanchedalmond;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div p {
+        color: yellow;
+        background-color: red;
+        font-weight: bold;
+    }
+    div > p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold; 
+    }
+    div+p{
+        color: yellow;
+        background-color: red;
+        font-weight: bold; 
+    }
+</style>
+
+<body>
+    <h1>This is a tutorial for selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p>This is the first paragraph</p>
+        </div>
+        <p>This is the second paragraph</p>
+    </div>
+    <p>This is the third paragraph</p>
+</body>
+
+</html>
