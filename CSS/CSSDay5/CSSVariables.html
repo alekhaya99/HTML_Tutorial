@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* This is a global variable */
+        :root{
+            --border-colour:red;
+        }
+
+.box{
+    /* This is a local variable */
+    --box-colour: rgb(68, 33, 33);
+    width: 500px;
+    height: 250px;
+    background-color: var(--box-colour);
+    border: 2px solid var(--border-colour);
+    margin: 5px 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

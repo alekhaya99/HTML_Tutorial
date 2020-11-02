@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistion</title>
+</head>
+<style>
+#box{
+    display: flex;
+    height: 150px;
+    width: 100px;
+    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+#box:hover{
+    background-color: thistle;
+}
+</style>
+<body>
+    <h3>This is a H3 type heading</h3>
+    <div class="container">
+        <div id="box">
+            Hi there I am a box
+        </div>
+    </div>
+</body>
+</html>

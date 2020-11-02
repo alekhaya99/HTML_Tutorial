@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Sahdow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 12px 12px;
+        /* border: 2px solid red; */
+        margin: 12px 12px;
+        background-color: burlywood;
+        /* box-shadow: 5px 5px black; */
+        /* box-shadow: -5px -5px 10px black; */
+        /* The 1st term is the x-offset, the second term is the y-offset and the third term is the blur radius */
+        /* The 4th term is the spreadradius */
+        /* box-shadow: -5px -5px 10px 10px rgba(0,0, 0, 0.5); */
+        /* The alpha in rgba takes the responsibility of darkness */
+        /* Insets allows the shadow to be inside the box */
+        /* box-shadow: insets -5px -5px 10px 10px rgba(0,0, 0, 0.5); */
+        /* Multiple shadows is also possible */
+        box-shadow: 5px 5px green, 10px 10px black;
+    }
+    .card h2{
+        text-shadow: 2px 2px white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="cars1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, modi ex odit cum saepe iusto
+                laboriosam minima explicabo accusamus corporis voluptates quis laborum obcaecati rerum fuga hic quas
+                deleniti exercitationem provident natus dolore facilis est impedit. Voluptatibus placeat beatae
+                similique ea maxime ipsum, officiis veritatis temporibus odio! Nulla, fugit voluptates?</p>
+        </div>
+        <div class="card" id="cars2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ab odio similique molestiae nobis
+                consequatur voluptates ipsa? Dolores, ea nihil soluta facere voluptate, ipsum adipisci officia commodi
+                nemo numquam architecto totam voluptatem asperiores illo voluptatum. Asperiores labore suscipit, nihil
+                nisi qui quibusdam tempore. Vitae doloribus accusamus eos, praesentium quisquam obcaecati.</p>
+        </div>
+        <div class="card" id="cars3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quae saepe ipsam repellat ex sit
+                possimus voluptate sapiente minus sed odit cupiditate velit ab, nulla illum ipsa alias rerum aut
+                laudantium natus sequi molestias delectus corrupti magnam. Consequuntur, at! Culpa quidem eligendi
+                facilis ipsum corrupti natus voluptates porro, quas ducimus.</p>
+        </div>
+        <div class="card" id="cars4">
+            <h2>Card4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam adipisci vitae omnis consectetur, labore
+                molestias veritatis consequuntur voluptate modi libero veniam ipsa illo illum rerum facilis repellat qui
+                quam, quod at numquam! Corrupti accusamus iure eius ratione consectetur perferendis itaque excepturi
+                nisi, quibusdam vitae nulla recusandae quia dolores veniam veritatis!</p>
+        </div>
+        <div class="card" id="cars5">
+            <h2>Card5</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatum velit fuga praesentium
+                aspernatur necessitatibus corporis aliquam reiciendis eveniet! Perferendis excepturi, veritatis repellat
+                placeat sed, voluptatem, repellendus expedita temporibus vitae inventore reprehenderit reiciendis culpa
+                sunt mollitia. Totam, commodi quis amet ut laudantium esse harum quod assumenda veritatis. Dolores,
+                consectetur labore.</p>
+        </div>
+        <div class="card" id="cars6">
+            <h2>Card6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt id architecto non tempora, ducimus
+                praesentium laborum eos laboriosam illo rerum obcaecati, tenetur voluptates velit rem quis beatae.
+                Quibusdam necessitatibus, autem harum dolore corrupti earum ipsam accusantium. Ipsa ex modi animi,
+                quidem dolorem sunt quam, ad quia, itaque vel soluta quasi.</p>
+        </div>
+    </div>
+</body>
+
+</html>
