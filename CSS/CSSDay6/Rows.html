@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+display: grid;
+/* For the first 3 box */
+grid-template-rows: 2fr 4fr 8fr;
+/* For other rows */
+grid-auto-rows: 15fr;
+grid-template-columns: repeat(3,auto);
+grid-gap: 5rem;
+        }
+        .box{
+            background-color: wheat;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is a box ina row-1</div>
+        <div class="box">This is a box ina row-2</div>
+        <div class="box">This is a box ina row-3</div>
+        <div class="box">This is a box ina row-4</div>
+        <div class="box">This is a box ina row-5</div>
+        <div class="box">This is a box ina row-6</div>
+        <div class="box">This is a box ina row-7</div>
+        <div class="box">This is a box ina row-8</div>
+        <div class="box">This is a box ina row-9</div>
+        <div class="box">This is a box ina row-10</div>
+        <div class="box">This is a box ina row-11</div>
+        <div class="box">This is a box ina row-12</div>
+        <div class="box">This is a box ina row-13</div>
+        <div class="box">This is a box ina row-14</div>
+        <div class="box">This is a box ina row-15</div>
+        <div class="box">This is a box ina row-16</div>
+        <div class="box">This is a box ina row-17</div>
+        <div class="box">This is a box ina row-18</div>
+        <div class="box">This is a box ina row-19</div>
+        <div class="box">This is a box ina row-20</div>
+    </div>
+</body>
+</html>

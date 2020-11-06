@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Areas</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'a a a a a'
+                'b b b b c';
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            padding: 13px;
+        }
+
+        #a {
+            grid-area: a;
+        }
+
+        #b {
+            grid-area: b;
+        }
+
+        #c {
+            grid-area: c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="a" class="box">A B C</div>
+        <div id="b" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, explicabo, quam odio
+            magnam aut vero animi in dolorem eos beatae unde cumque est necessitatibus excepturi aliquid qui totam
+            reprehenderit ex fugiat inventore? Rerum, nobis?</div>
+        <div id="c" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, recusandae.</div>
+        <!-- <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-11</div>
+        <div class="box">This is box-12</div>
+        <div class="box">This is box-13</div>
+        <div class="box">This is box-14</div>
+        <div class="box">This is box-15</div>
+        <div class="box">This is box-16</div>
+        <div class="box">This is box-17</div>
+        <div class="box">This is box-18</div>
+        <div class="box">This is box-19</div>
+        <div class="box">This is box-20</div> -->
+    </div>
+</body>
+
+</html>
